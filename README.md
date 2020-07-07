@@ -12,7 +12,7 @@ Study algorithm and function that we learn in Data Science
 
 ## Project List
 ### Data Anaylsis
-  * [Crawling]() : Crawling news data and create word cloud
+  * [Crawling](https://github.com/seraaaayeo/study-AI/tree/master/5%EC%9E%A5_%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%ED%81%AC%EB%A1%A4%EB%A7%81) : Crawling news data and create word cloud
 ### Machine Learning
   * [Gradient Descent](https://github.com/seraaaayeo/study-AI/tree/master/Gradient%20descent) : 
 
