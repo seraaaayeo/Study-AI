@@ -27,3 +27,4 @@ Study algorithm and function that we learn in Data Science
 |**git** | <center>We follow the Github flow</center> |
 
 
+dd
