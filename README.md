@@ -1,6 +1,6 @@
 <h3 align="center">AI: Data Science</h3>
 <p align="center">
-  :computer:Data Science: 데이터분석, ML, DL 이론 구현하기:computer:
+  :computer:데이터분석, Machine Learning, Deep Learning 이론 구현하기:computer:
 </p>
 
 * * *
