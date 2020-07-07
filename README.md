@@ -14,7 +14,7 @@ Study algorithm and function that we learn in Data Science
 ### Data Anaylsis
   * [Crawling]() : Crawling news data and create word cloud
 ### Machine Learning
-  * [Gradient Descent]() : 
+  * [Gradient Descent](https://github.com/seraaaayeo/study-AI/tree/master/Gradient%20descent) : 
 
 ## Stack
 * python 3
