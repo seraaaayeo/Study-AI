@@ -1,4 +1,4 @@
-<h3 align="center">Computer Network</h3>
+<h3 align="center">Study - AI</h3>
 <p align="center">
   :computer:Data Science: 데이터분석, ML, DL 이론 구현하기:computer:
 </p>
