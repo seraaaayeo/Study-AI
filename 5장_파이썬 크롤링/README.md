@@ -5,38 +5,34 @@
 |  <center>Requirement</center> |  <center>Description</center> |  
 |:--------|:--------:|
 |**Python** | <center>v3.X or higher</center> |
-|**mecab** | <center>v0.996 or higher</center> |
-|**git** | <center>We follow the Github flow</center> |
+|**pip** | <center>We use pip install command to install python package</center> |
  
 ### Installation
 ```
-pip install python-mecab-ko
+pip install beautifulsoup4
 ```
-We will use this module to return microtime
-
+This is needed to analysis HTML, XML, JSON
 ```
-npm install buffer-crc32
+pip install requests
 ```
-We will use this crc32 encoder
-
+This is needed to request HTTP
 ***
 ## Word-cloud
+
 ### Pre-requisties
 |  <center>Requirement</center> |  <center>Description</center> |  
 |:--------|:--------:|
 |**Python** | <center>v3.X or higher</center> |
-|**mecab** | <center>v0.996 or higher</center> |
-|**git** | <center>We follow the Github flow</center> |
+|**pip** | <center>We use pip install command to install python package</center> |
  
 ### Installation
 ```
 pip install python-mecab-ko
 ```
-We will use this module to return microtime
+This is needed to extract Korean morpheme
 
 ```
-pip install requests
+pip install wordclud
 ```
-We will use this crc32 encoder
+This is needed to create word cloud
 
-***
