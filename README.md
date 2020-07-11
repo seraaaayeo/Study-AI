@@ -1,4 +1,4 @@
-<h3 align="center">AI: Data Science</h3>
+<h3 align="center">AI fundamental stage</h3>
 <p align="center">
   :computer:데이터분석, Machine Learning, Deep Learning 이론 구현하기:computer:
 </p>
@@ -6,9 +6,7 @@
 * * *
 
 ## Description
-데이터 과학을 위한 데이터 분석, 기계학습 등의 이론을 구현해봅니다.
-
-Study algorithm and function that we learn in Data Science
+AI의 기초를 닦기 위해 데이터 분석, 기계학습 등의 이론을 구현하고 연습해봅니다.
 
 ## Project List
 ### Data Anaylsis
