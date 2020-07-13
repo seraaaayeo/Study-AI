@@ -13,11 +13,11 @@
 ```
 pip install beautifulsoup4
 ```
-This is needed to analysis HTML, XML, JSON
+- This is needed to analysis HTML, XML, JSON
 ```
 pip install requests
 ```
-This is needed to request HTTP
+- This is needed to request HTTP
 ***
 ## Word-cloud
 ![wc](https://user-images.githubusercontent.com/53554014/86812197-b2d4e180-c0b9-11ea-82d8-4688c1ae6788.png)
@@ -31,10 +31,10 @@ This is needed to request HTTP
 ```
 pip install eunjeon
 ```
-This is needed to extract Korean morpheme. I use mecab from [pyeunjeon](https://github.com/koshort/pyeunjeon)
+- This is needed to extract Korean morpheme. I use mecab from [pyeunjeon](https://github.com/koshort/pyeunjeon)
 
 ```
 pip install wordcloud
 ```
-This is needed to create word cloud
+- This is needed to create word cloud
 
