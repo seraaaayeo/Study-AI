@@ -29,12 +29,12 @@ This is needed to request HTTP
  
 ### Installation
 ```
-pip install python-mecab-ko
+pip install eunjeon
 ```
-This is needed to extract Korean morpheme
+This is needed to extract Korean morpheme. I use mecab from [pyeunjeon](https://github.com/koshort/pyeunjeon)
 
 ```
-pip install wordclud
+pip install wordcloud
 ```
 This is needed to create word cloud
 
