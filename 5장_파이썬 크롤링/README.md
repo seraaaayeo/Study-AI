@@ -8,6 +8,7 @@
 |:--------|:--------:|
 |**Python** | <center>v3.X or higher</center> |
 |**pip** | <center>We use pip install command to install python package</center> |
+|**visual studio** | <center>We should have visual studio to build C++ based mecab</center> |
  
 ### Installation
 ```
