@@ -1,6 +1,2 @@
-# study-AI
-* study AI, including ML, DL, and Data analyst
-* AI hub, edwith(boostcourse), fast compus
+# study-AI- TEST CODE
 
-## study ML
-* stack
