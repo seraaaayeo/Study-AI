@@ -1,2 +1,27 @@
-# study-AI- TEST CODE
+<h3 align="center">AI fundamental stage</h3>
+<p align="center">
+  :computer:데이터분석, Machine Learning, Deep Learning 이론 구현하기:computer:
+</p>
+
+* * *
+
+## Description
+AI의 기초를 닦기 위해 데이터 분석, 기계학습 등의 이론을 구현하고 연습해봅니다.
+
+## Project List
+### Data Anaylsis
+  * [Crawling](https://github.com/seraaaayeo/study-AI/tree/master/5%EC%9E%A5_%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%ED%81%AC%EB%A1%A4%EB%A7%81) : Crawling news data and create word cloud
+### Machine Learning
+  * [Gradient Descent](https://github.com/seraaaayeo/study-AI/tree/master/Gradient%20descent) : 
+
+## Stack
+* python 3
+
+## Pre-requisties
+|  <center>Requirement</center> |  <center>Description</center> |  
+|:--------|:--------:|
+|**jupyter notebook** | <center>We use jupyter nootbook</center> |
+|**tensorflow** | <center>v2.0 or higher</center> |
+|**git** | <center>We follow the Github flow</center> |
+
 
