@@ -125,15 +125,16 @@ P(A|X) = P(X|A)P(A) / P(X)
 ```
 * P(X|A): P(X) given A, A라는 조건이 있을 때 X일 확률.
 * 예제: 암 검사 키트
-* (계산 그림)
+* <img src=https://user-images.githubusercontent.com/53554014/88652777-38224380-d106-11ea-98d0-080164e361e0.jpg width=70% height=70% title="확률 계산"></src>
 
 ## 나이브 베이즈 분류기
 * 분류(classification): 주어진 데이터가 어떤 클래스에 속하는지 알아내는 작업
-* (이미지)
+* <img src=https://user-images.githubusercontent.com/53554014/88652598-04471e00-d106-11ea-8ef8-504848887b35.png width=70% height=70% title="기계학습"></src>
 * 두 사건이 있을 때 P(A|X)와 P(B|X) 중 어느 것이 더 큰가?
 ```
 P(A|X) : P(B|X) = P(X|A)P(A) / P(X) : P(X|B)P(B) / P(X)
 ```
+* ![image](https://user-images.githubusercontent.com/53554014/88670176-b6d7aa80-d11f-11ea-87d4-acd61457112a.png)
 * P(X|B): likelihood
 * P(B): 사전(prior)확률
 * P(B|X): 사후(posterior)확률
