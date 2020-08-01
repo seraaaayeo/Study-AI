@@ -218,3 +218,224 @@ P(A|X) : P(B|X) = P(X|A)P(A) / P(X) : P(X|B)P(B) / P(X)
   - 중심점 업데이트와 클러스터 할당을 반복하다가 어떠한 데이터 포인트에 대해서도 새로운 할당이 일어나지 않을 때 알고리즘 종료
 * K means는 시작점에 민감한 알고리즘이다.
   - 시작점을 어떻게 설정할 것인가?
+
+***
+
+# 퍼셉트론(Perceptron)
+* 인공신경망 시스템. 입력이 있을 때, 어떤 함수에 따라서 activation이 일어나고 출력을 하는 시스템.
+* 퍼셉트론 -> 인공 신경망 -> 인공지능 으로 진행된다.
+* 구조
+    ```
+    출력 = activation(w1x1 + w2x2 + B) #w1, w2 = 가중치, B = bias
+    ```
+    - activation function(step function) : 특정 조건을 만족하면 1을 출력(활성화). 이외에는 0을 출력.
+    - 퍼셉트론은 논리 게이트의 역할을 한다.
+* 논리게이트
+    - AND
+    - NAND(Not-And): 0/0 -> 1, 1/0 -> 1, 0/1 -> 1, 1/1 -> 0
+* 단층 퍼셉트론: 선형 분류기
+* 다층 퍼셉트론: 비선형 분류기
+    - 퍼셉트론을 여러개 쌓아서 만든다.
+    - OR와 NAND 게이트를 결합하여 비선형인 XOR 게이트를 만들어 구역을 분리할 수 있다.
+    - 여기서 NAND 게이트와 OR 게이트를 hidden layer라고 한다.
+    - 이처럼 여러 개의 layer를 이용하면 세분화된 분리가 가능하다.
+    - **Hidden layer가 3층 이상이면 Deep Neural Network(DNN, 딥러닝)이라 한다.**
+    
+***
+
+# Tensorflow
+```
+conda install tensorflow
+```
+* 전세계에서 가장 많이 쓰이는 딥러닝 프레임워크.
+* Tensor = 다차원 array = Data
+    - 딥러닝에서 텐서는 다차원 배열로 나타내는 데이터이다.
+    - ex.RGB 이미지는 3차원 배열로 나타나는 텐서.
+* Flow: 데이터의 흐름. 
+    - 입력 tensor가 있을 때, operation node에 의해 결과값이 나오는 텐서의 흐름을 tensorflow
+    - 텐서플로우에서 계산은 데이터 플로우 그래프로 수행한다.
+    * 모델을 만든다 = graph를 만든다.
+
+## Tensorflow 사용
+
+### 상수 선언하기
+```
+import tensorflow as tf
+
+tensor_constant = tf.constant(value, dtype=None, shape=None, name=None)
+```
+* value: 반환되는 상수값
+* shape: tensor의 차원(optional)
+* dtype: 반환되는 tensor 타입(optional_)
+* name: 상수 이름(optional)
+* 예
+    - 모든 원소 값이 0인 tensor 생성
+    ```
+    tensor_zero = tf.zeros(shape, dtype=tf.float32, name=None)
+    shape에는 차원의 튜플을 넣는다. 예를 들어 2X2 텐서를 생성하고 싶으면 (2,2) 입력.
+    ```
+    - 모든 원소 값이 1인 tensor 생성
+    ```
+    tensor_one = tf.ones(shape, dtype=tf.float32, name=None)
+    ```
+
+### 시퀀스 선언하기
+* start에서 stop까지 증가하는 num 개수 데이터
+    ```
+    import tensorflow as tf
+
+    tensor_seq = tf.linspace(start, stop, num, name=None)
+    ```
+    * start: 시작 값
+    * stop: 끝 값
+    * num: 생성할 데이터 개수
+    * name: 시퀀스 이름
+* start에서 stop까지 delta씩 증가하는 데이터
+    ```
+    tensor_seq2 = tf.range(start, limit=None, delta=None, name=None)
+    ```
+    * limit: 끝 값
+    * delta: 증가량
+
+### 난수 선언하기
+* 보통 난수를 통해서 모델을 초기화한다.
+* 주로 정규분포 사용.
+```
+import tensorflow as tf
+
+#정규분포 생성
+tensor_ = tf.random.normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name='normal')
+
+#균등분포 생성
+tensor2_ = tf.random.uniform(shape, minval=0, maxval=None, dtype=tf.float32, seed=None, name='uniform')
+```
+* seed: seed값에서 특정한 알고리즘을 통해 순차적으로 난수 생성.
+* 균등분포: 일정한 범위 내의 확률은 모두 같다.
+
+### 변수 선언하기
+```
+#정규분포 생성
+tensor_val = tf.Variable(value, name=None)
+
+#일반적인 퍼셉트론의 가중치와 bias 생성
+weight = tf.Variable(10)
+bias = tf.Variable(tf.random.normal([10, 10]))
+```
+* 모델을 트레이닝해서 얻고싶은 값이 무엇이냐
+* 초기화된 변수에 트레이닝을 통한 값이 assign 가능.
+* 가중치를 variable로 선언하면 모델이 training하면서 가중치가 update 가능.
+
+### Tensor 연산자
+* 단항 연산자
+    * tf.negative(x) #숫자 
+    * tf.logical_not(x) #!x, Boolean
+    * tf.abs(X)
+* 이항 연산자
+    * add, subtract, multiply
+    * 나누기: truediv
+    * 몫: mod
+    * 제곱: pow
+* tensor에 .numpy()를 붙이면 넘파이 배열로 변환.
+
+## Tensorflow로 딥러닝 구현하기
+### 데이터 용어 정리
+* Epoch: 한 번의 epoch는 전체 데이터 셋에 대해 한 번 학습을 완료한 상태를 뜻한다.
+* Batch: 나눠진 데이터 셋. iteration은 epoch를 나누어서 실행하는 횟수를 뜻한다. 
+    - 데이터셋의 양이 굉장히 많기 때문에 데이터셋을 여러 작은 데이터로 쪼개서 학습을 진행하며, 이 작은 데이터를 batch, 쪼갠 데이터의 양을 batch size라 한다.
+    - 예: 1000개의 데이터를 batch size 100으로 학습을 시킬 경우, 1 epoch는 10 iteration
+
+### 데이터 준비하기
+* Dataset API를 사용하여 데이터 준비.
+```
+data = np.random.sample((100, 2)) #shape이 (100,2)
+labels = np.random.sample((100, 1))
+
+#numpy array로부터 데이터셋 생성
+dataset = tf.data.Dataset.from_tensor_slices((data, lables))
+dataset = dataset.batch(32)
+```
+
+### Keras
+딥러닝 모델을 만들기 위한 고수준의 API 요소를 제공하는 모델 수준의 라이브러리
+
+* Keras API
+    - multi-backend
+    - cpu, gpu 모두 구동
+
+### 딥러닝 모델 생성 함수
+* 인공신경망 Sequential 모델을 만들기 위한 함수
+    ```
+    tf.keras.models.Sequential()
+    ```
+* 신경망 모델의 layer 구성에 필요한 함수
+    ```
+    tf.keras.layers.Dense(units, activation)
+    ```
+    - unit: 레이어 안의 Node 수
+    - activation: 적용할 활성함수
+* 예시 **tf.keras.layers를 추가하여 hidden layer를 쌓는다.**
+    ```
+    model = tf.keras.models.Sequential([
+     tf.keras.layers.Dense(10, input_dim=2, activation='sigmoid'),
+     tf.keras.layers.Dense(10, activation='sigmoid'),
+     tf.keras.layers.Dense(1, activation='sigmoid'),
+    ]
+    ```
+    - input node는 2개
+    - 첫 번째 layer의 node는 10개
+    - 두 번째 layer의 node는 10개
+    - 세 번째 layer의 node는 1개.
+    - 각 unit은 weight로 연결된다.
+* 모델 학습하기
+    - loss function, optimizer(loss function을 줄이는 전략이 무엇인가) 필요.
+    ```
+    #모델 구성
+    model.compile(loss='mean_squared_error', optimizer='SGD') #학습 방법 설정
+    model.fit(dataset, epochs=100) #모델 학습
+    
+    #데이터셋 생성
+    dataset_test = tf.Dataset.from_tensor_slices((data_test, labels_test))
+    dataset_test = dataset_test.batch(32)
+    
+    #모델 성능 평가
+    model.evaluate(dataset_test)
+    predicted_labels_test = model.predict(data_test) #학습된 모델로 예측값 생성
+    ```
+    - SGD: Statistic(??) Gradient Descent
+
+### 분류모델: 네이버 영화 댓글 평점 데이터
+* Data -> Preprocessing -> Input layer
+    * Preprocessing: Tokenizing&Bow, Encoding
+* softmax function을 통해 긍정인지 부정인지 경향성을 볼 수 있다.
+* 최적화 기법: 선형회귀에서는 GD가 쓰이지만, 인공신경망에서는 다양한 형태의 GD 기법들이 사용된다.
+    - **SGD**, **Adam**, Momentum, AdaGrad, RMSProp 등
+
+***
+
+## 아나콘다와 텐서플로우
+* [아나콘다 가상환경 생성](https://zvi975.tistory.com/65)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
