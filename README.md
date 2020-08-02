@@ -1,27 +1,35 @@
-<h3 align="center">AI fundamental stage</h3>
+<h1 align="center">AI fundamental stage</h1>
 <p align="center">
-  :computer:데이터분석, Machine Learning, Deep Learning 이론 구현하기:computer:
+    <img alt="algorithm image" src="https://user-images.githubusercontent.com/53554014/89105614-82385b80-d45d-11ea-9221-91d367bb1059.jpg" width=50% height=50% />
+</p>
+<p align="center">
+  :computer:Data Science, Machine Learning, Deep Learning 이론 구현하기:computer:
 </p>
 
 * * *
 
 ## Description
-AI의 기초를 닦기 위해 데이터 분석, 기계학습 등의 이론을 구현하고 연습해봅니다.
+데이터 분석, 기계학습 등의 이론을 구현하고 연습해보며 AI의 기본기 다지기
 
-## Project List
-### Data Anaylsis
-  * [Crawling](https://github.com/seraaaayeo/study-AI/tree/master/5%EC%9E%A5_%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%ED%81%AC%EB%A1%A4%EB%A7%81) : Crawling news data and create word cloud
-### Machine Learning
-  * [Gradient Descent](https://github.com/seraaaayeo/study-AI/tree/master/Gradient%20descent) : 
+## Reference: online courses
+* [elice](https://elice.io/)
+* [edwith](https://www.edwith.org/)
+
+## Project list
+* [Crawling](https://github.com/seraaaayeo/Study-AI/tree/master/Python-Crawling) : 뉴스 데이터를 크롤링하고, 수집한 데이터를 이용해 워드 클라우드 만들기
+* [Gradient Descent](https://github.com/seraaaayeo/Study-AI/blob/master/edwith/Gradient%20descent/gradient_descent_test1.ipynb) : 텐서플로우로 Gradient descent 구현
+* [Regression](https://github.com/seraaaayeo/Study-AI/tree/master/elice/2_Regression) : sklearn을 이용하여 선형회귀, 비선형회귀, 다항식회귀 구현
+* [Naive bayes](https://github.com/seraaaayeo/Study-AI/blob/master/elice/3_Naive_Bayes/Naive_Bayesian_(5)_Sentiment%20Classifier.ipynb) : 나이브 베이즈 분류기를 학습시켜 네이버 영화 리뷰 감정 분류하기
+* [Clustering](https://github.com/seraaaayeo/Study-AI/blob/master/elice/4_KMeans_Clustering/test_KMeans.ipynb) : 13차원의 와인 데이터를 pca 차원축소하고 클러스터링하여 나타내기
+* [Perceptron](https://github.com/seraaaayeo/Study-AI/blob/master/elice/5_Perceptron/perceptron_iris.ipynb) : 퍼셉트론 선형 분류기로 붓꽃 데이터 분류하기
+* [ANN](https://github.com/seraaaayeo/Study-AI/tree/master/elice/6_ANN) : 선형회귀, 비선형회귀, 다항식회귀 모델을 구현, 감정분류기를 모델 학습을 통해 구현하기, Fashion-MNIST 데이터 분류
 
 ## Stack
-* python 3
+* python 3.7
+* tensorflow 2.3
 
 ## Pre-requisties
 |  <center>Requirement</center> |  <center>Description</center> |  
 |:--------|:--------:|
 |**jupyter notebook** | <center>We use jupyter nootbook</center> |
-|**tensorflow** | <center>v2.0 or higher</center> |
 |**git** | <center>We follow the Github flow</center> |
-
-
