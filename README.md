@@ -16,7 +16,7 @@
 * [edwith](https://www.edwith.org/)
 
 ## Project list
-* [Crawling](https://github.com/seraaaayeo/Study-AI/tree/master/Python-Crawling) : 뉴스 데이터를 크롤링하고, 수집한 데이터를 이용해 워드 클라우드 만들기
+* [Crawling](https://github.com/seraaaayeo/Study-AI/tree/master/crawling%26wc) : 뉴스 데이터를 크롤링하고, 수집한 데이터를 이용해 워드 클라우드 만들기
 * [Gradient Descent](https://github.com/seraaaayeo/Study-AI/blob/master/edwith/Gradient%20descent/gradient_descent_test1.ipynb) : 텐서플로우로 Gradient descent 구현
 * [Regression](https://github.com/seraaaayeo/Study-AI/tree/master/elice/2_Regression) : sklearn을 이용하여 선형회귀, 비선형회귀, 다항식회귀 구현
 * [Naive bayes](https://github.com/seraaaayeo/Study-AI/blob/master/elice/3_Naive_Bayes/Naive_Bayesian_(5)_Sentiment%20Classifier.ipynb) : 나이브 베이즈 분류기를 학습시켜 네이버 영화 리뷰 감정 분류하기
@@ -25,11 +25,12 @@
 * [ANN](https://github.com/seraaaayeo/Study-AI/tree/master/elice/6_ANN) : 선형회귀, 비선형회귀, 다항식회귀 모델을 구현, 감정분류기를 모델 학습을 통해 구현하기, Fashion-MNIST 데이터 분류
 
 ## Stack
-* python 3.7
-* tensorflow 2.3
+* Python 3.7
+* Tensorflow 2.3
 
 ## Pre-requisties
 |  <center>Requirement</center> |  <center>Description</center> |  
 |:--------|:--------:|
-|**jupyter notebook** | <center>We use jupyter nootbook</center> |
-|**git** | <center>We follow the Github flow</center> |
+|**Colab** | <center>We use colab for test</center> |
+|**Jupyter notebook** | <center>We use jupyter nootbook</center> |
+|**Git** | <center>We follow the Github flow</center> |
