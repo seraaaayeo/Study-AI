@@ -36,11 +36,11 @@
 
 ## Stack
 * Python 3.7
-* Tensorflow 2.3
+* Tensorflow 2.2
 
 ## Pre-requisties
 |  <center>Requirement</center> |  <center>Description</center> |  
 |:--------|:--------:|
-|**Colab** | <center>We use colab for test</center> |
 |**Jupyter notebook** | <center>We use jupyter nootbook</center> |
+|**Colab** | <center>We use colab for using GPU</center> |
 |**Git** | <center>We follow the Github flow</center> |
