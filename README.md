@@ -13,14 +13,14 @@
 
 ## Reference: online courses
 * [elice](https://elice.io/)
-* [edwith](https://www.edwith.org/)
+* [edwith : 텐서플로우로 시작하는 딥러닝 기초](https://www.edwith.org/)
 * [Coursera : Machine Learning class by Andrew Ng](https://www.coursera.org/learn/machine-learning/home/welcome)
 
 ## Project list
 |  <center>Number</center> |  <center>About</center> |  <center>Concept</center> |  <center>Description</center> |  <center>Shortcut</center> |    
 |:--------|:--------:|:--------:|:--------:|:--------:|
-|**1** |  <center>News data word cloud</center> | <center>Crawling, Wordcloud</center> |  <center>네이버 뉴스 데이터를 크롤링하고, 수집한 데이터를 정제하여 워드클라우드 만들기</center> | <center>[crawling&wc](https://github.com/seraaaayeo/Study-AI/tree/master/crawling%26wc)</center> |
-|**2** | <center>Sentiment Classifier</center> |  <center>Naive Bayes</center> | <center>나이브 베이즈 분류기를 학습시켜 네이버 영화 리뷰 감정 분류하기</center> | <center[Naive Bayes Classifier](https://github.com/seraaaayeo/Study-AI/blob/master/elice/3_Naive_Bayes/Naive_Bayesian_(5)_Sentiment%20Classifier.ipynb)></center> |
+|**1** |  <center>News wordcloud</center> | <center>Crawling, Wordcloud</center> |  <center>네이버 뉴스 데이터를 크롤링하고, 수집한 데이터를 정제하여 워드클라우드 만들기</center> | <center>[crawling&wc](https://github.com/seraaaayeo/Study-AI/tree/master/crawling%26wc)</center> |
+|**2** | <center>Sentiment Classifier</center> |  <center>Naive Bayes</center> | <center>나이브 베이즈 분류기를 학습시켜 네이버 영화 리뷰 감정 분류하기</center> | <center>[Naive Bayes Classifier](https://github.com/seraaaayeo/Study-AI/blob/master/elice/3_Naive_Bayes/Naive_Bayesian_(5)_Sentiment%20Classifier.ipynb)</center> |
 || <center>Sentiment Classifier</center> |  <center>DNN</center> | <center>tensorflow를 이용하여 모델을 쌓고 학습시켜 네이버 영화 리뷰 감정 분류하기</center> | <center>[DNN Classifier](https://github.com/seraaaayeo/Study-AI/blob/master/elice/6_ANN/(4)_Sentiment%20calssifier.ipynb)</center> |
 |**3** | <center>Classification</center> |  <center>PCA, Kmeans clustering</center> | <center>sklearn을 이용하여 13차원 와인 데이터를 pac 차원축소하고 K-means 클러스터링으로 분류하기</center> | <center>[Wine data clustering](https://github.com/seraaaayeo/Study-AI/blob/master/elice/4_KMeans_Clustering/test_KMeans.ipynb)</center> |
 |**4** | <center>Classifier</center> |  <center>Perceptron</center> | <center>퍼셉트론 선형 분류기로 sklearn iris 데이터 분류하기</center> | <center>[iris data classification](https://github.com/seraaaayeo/Study-AI/blob/master/elice/5_Perceptron/perceptron_iris.ipynb)</center> |
