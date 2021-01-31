@@ -1,4 +1,4 @@
-<h1 align="center">AI fundamental stage</h1>
+<h1 align="center">ML/DL study with online courses</h1>
 <p align="center">
     <img alt="algorithm image" src="https://user-images.githubusercontent.com/53554014/89105614-82385b80-d45d-11ea-9221-91d367bb1059.jpg" width=50% height=50% />
 </p>
@@ -9,7 +9,7 @@
 * * *
 
 ## Description
-여러 온라인 강좌를 통해 데이터 분석, 머신러닝/딥러닝 이론을 구현하고 연습하기
+여러 온라인 강좌를 통해 데이터 분석, 머신러닝/딥러닝 기초 이론을 구현하고 연습하기
 
 ## Reference: online courses
 * [elice](https://elice.io/)
